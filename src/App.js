@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+
+import Header from "./components/Header";
+import Content from "./components/Content";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <header>
-          <h1>ini test</h1>
-        </header>
+        <h1>ini test</h1>
+        <Header />
+        <Content />
       </div>
     );
   }
