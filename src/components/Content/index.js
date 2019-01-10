@@ -2,23 +2,19 @@ import React, { Component } from "react";
 
 import styled from "styled-components";
 
-const Main = styled.main`
-  background-color: #ecf0f1;
-  margin: 0;
-  max-width: 850px;
-  p {
-    margin: 0;
-  }
+const mainStyle = {
+  color: "red",
+  backgroud: "black"
+};
+
+const Paragraph = styled.p`
+  font-size: 20px;
 `;
 
-class Content extends Component {
-  render() {
-    return (
-      <Main>
-        <p>this component made in class 'content'</p>
-      </Main>
-    );
-  }
-}
+const Content = () => (
+  <main style={mainStyle}>
+    <Paragraph>this component made in class 'content'</Paragraph>
+  </main>
+);
 
 export default Content;

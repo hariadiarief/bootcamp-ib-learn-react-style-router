@@ -25,7 +25,6 @@ const NavigationLink = styled.ul`
   li {
     display: inline-block;
     margin-right: 10px;
-    
   }
 `;
 
