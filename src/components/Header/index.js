@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 
 const NavigationBar = styled.header`
@@ -34,9 +36,15 @@ class Header extends Component {
       <NavigationBar>
         <Title>Adi Apps</Title>
         <NavigationLink>
-          <li>Home</li>
-          <li>Todo</li>
-          <li>Login</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">Todo</Link>
+          </li>
+          <li>
+            <Link to="/random">Random</Link>
+          </li>
         </NavigationLink>
       </NavigationBar>
     );
