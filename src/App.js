@@ -7,7 +7,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>ini test</h1>
         <Header />
         <Content />
       </div>
