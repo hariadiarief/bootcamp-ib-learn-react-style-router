@@ -1,8 +1,8 @@
 import React from "react";
-
 import styled from "styled-components";
-
 import { Button } from "reactstrap";
+
+import Page from "../Page";
 
 const mainStyle = {
   color: "red",
@@ -14,11 +14,13 @@ const Paragraph = styled.p`
 `;
 
 const Content = () => (
-  <main style={mainStyle}>
-    <Paragraph>this component made in class 'content'</Paragraph>
-    <Button color="primary">Get Srarted</Button>
-    <Button color="danger">Danger</Button>
-  </main>
+  <Page>
+    <main style={mainStyle}>
+      <Paragraph>this component made in class 'content'</Paragraph>
+      <Button color="primary">Get Srarted</Button>
+      <Button color="danger">Danger</Button>
+    </main>
+  </Page>
 );
 
 export default Content;

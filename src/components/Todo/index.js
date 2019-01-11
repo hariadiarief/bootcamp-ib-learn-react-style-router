@@ -1,9 +1,10 @@
 import React from "react";
+import Page from "../Page";
 
 const Todo = () => (
-  <main>
-    <p>Todo is hire</p>
-  </main>
+  <Page>
+    <p>This is my todo</p>
+  </Page>
 );
 
 export default Todo;

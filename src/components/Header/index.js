@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-
 import { Link } from "react-router-dom";
-
 import styled from "styled-components";
+
+import Logo from "../Logo";
 
 const NavigationBar = styled.header`
   height: 5em;
@@ -11,14 +11,6 @@ const NavigationBar = styled.header`
   margin: 0;
   display: flex;
   flex-direction: column;
-`;
-
-const Title = styled.h1`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: pink;
-  font-size: 1.5em;
 `;
 
 const NavigationLink = styled.ul`
@@ -34,7 +26,7 @@ class Header extends Component {
   render() {
     return (
       <NavigationBar>
-        <Title>Adi Apps</Title>
+        <Logo />
         <NavigationLink>
           <li>
             <Link to="/">Home</Link>

@@ -1,9 +1,10 @@
 import React from "react";
+import Page from "../Page";
 
 const Random = () => (
-  <main>
-    <p>Random Things</p>
-  </main>
+  <Page>
+    <p>This is my Todo</p>
+  </Page>
 );
 
 export default Random;
